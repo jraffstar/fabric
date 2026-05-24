@@ -36,10 +36,9 @@ public class ModItems {
         Identifier itemID = new Identifier(Cat.MOD_ID, id);
 
         // Register item
-        Item registeredItem = Registry.register(Registries.ITEM, itemID, item);
 
         // Return item
-        return registeredItem;
+        return Registry.register(Registries.ITEM, itemID, item);
     }
 
     public static void initialize() {
