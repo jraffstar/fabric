@@ -2,6 +2,8 @@ package bike.jenny.cat;
 
 import bike.jenny.cat.managers.ModItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,5 +15,7 @@ public class Cat implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Hello, World!");
         ModItems.initialize();
+        FuelRegistry.INSTANCE.add(ModItems.MAXWELL, 30*20);
+
     }
 }
