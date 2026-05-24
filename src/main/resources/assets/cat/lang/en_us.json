@@ -1,4 +1,7 @@
 {
   "item.cat.maxwell": "Maxwell",
-  "item.cat.maxwell_sword": "Sword of Maxwell"
+  "item.cat.maxwell_sword": "Sword of Maxwell",
+  "block.cat.maxwell_block": "Maxwell Block",
+
+  "itemGroup.cat.maxwell_group": "Maxwell"
 }

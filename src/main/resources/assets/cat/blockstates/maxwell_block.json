@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "cat:block/maxwell_block" }
+  }
+}

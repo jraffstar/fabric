@@ -1,5 +1,7 @@
 package bike.jenny.cat;
 
+import bike.jenny.cat.managers.ItemGroups;
+import bike.jenny.cat.managers.ModBlocks;
 import bike.jenny.cat.managers.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -14,7 +16,12 @@ public class Cat implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello, World!");
+
         ModItems.initialize();
+        ModBlocks.initialize();
+        ItemGroups.initialize();
+
+        // Add items to fuel registry
         FuelRegistry.INSTANCE.add(ModItems.MAXWELL, 30*20);
 
     }

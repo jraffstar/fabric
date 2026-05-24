@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import bike.jenny.cat.Cat;
 
 public class ModItems {
+
     public static final FoodComponent MAXWELL_FOOD_COMPONENT = new FoodComponent.Builder()
             .alwaysEdible()
             .snack()
