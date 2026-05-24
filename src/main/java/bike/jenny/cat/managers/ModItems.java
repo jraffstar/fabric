@@ -36,9 +36,7 @@ public class ModItems {
         // Create item identifier
         Identifier itemID = new Identifier(Cat.MOD_ID, id);
 
-        // Register item
-
-        // Return item
+        // Register and return item
         return Registry.register(Registries.ITEM, itemID, item);
     }
 
