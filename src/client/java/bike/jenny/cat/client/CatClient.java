@@ -6,5 +6,6 @@ public class CatClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
     }
 }
