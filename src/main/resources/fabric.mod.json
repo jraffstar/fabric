@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "cat",
+  "version": "${version}",
+  "name": "cat",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "bike.jenny.cat.client.CatDataGenerator"
+    ],
+    "client": [
+      "bike.jenny.cat.client.CatClient"
+    ],
+    "main": [
+      "bike.jenny.cat.Cat"
+    ]
+  },
+  "mixins": [
+    "cat.mixins.json",
+    {
+      "config": "cat.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
